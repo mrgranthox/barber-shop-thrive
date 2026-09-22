@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recent Work &amp; Gallery — Eddie's Grooming Lounge | Tarkwa, Ghana</title>
+
+  <!-- Primary SEO Meta Tags -->
+  <meta name="description" content="Browse recent haircuts, skin fades, clean beard sculpting, and wave styling by Eddie's Grooming Lounge in Tarkwa Central, Western Region, Ghana. Includes interactive before-and-after comparison." />
+  <meta name="keywords" content="barbershop portfolio Tarkwa, haircut transformations Ghana, fade haircuts, beard sculpting photos, before and after haircut, Eddie's Grooming Lounge recent work" />
+  <meta name="author" content="Edward Nyame" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#13251B" />
+  <link rel="canonical" href="https://eddiesgrooming.netlify.app/portfolio.html" />
+
+  <!-- Favicon & Touch Icons -->
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="apple-touch-icon" href="images/logo.png" />
+
+  <!-- Open Graph / WhatsApp / Facebook Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://eddiesgrooming.netlify.app/portfolio.html" />
+  <meta property="og:site_name" content="Eddie's Grooming Lounge" />
+  <meta property="og:title" content="Recent Work &amp; Gallery — Eddie's Grooming Lounge | Tarkwa, Ghana" />
+  <meta property="og:description" content="See client haircut transformations, sharp fades, and beard sculpting at Eddie's Grooming Lounge in Tarkwa, Western Region." />
+  <meta property="og:image" content="images/work-fade.jpg" />
+  <meta property="og:locale" content="en_GH" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://eddiesgrooming.netlify.app/portfolio.html" />
+  <meta name="twitter:title" content="Recent Work &amp; Gallery — Eddie's Grooming Lounge | Tarkwa, Ghana" />
+  <meta name="twitter:description" content="See client haircut transformations, sharp fades, and beard sculpting at Eddie's Grooming Lounge in Tarkwa, Western Region." />
+  <meta name="twitter:image" content="images/work-fade.jpg" />
+
+  <!-- Geotagging for Local Search -->
+  <meta name="geo.region" content="GH-WP" />
+  <meta name="geo.placename" content="Tarkwa" />
+  <meta name="geo.position" content="5.3018;-1.9930" />
+  <meta name="ICBM" content="5.3018, -1.9930" />
+
+  <!-- Structured Data: Gallery & Portfolio -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ImageGallery",
+    "name": "Eddie's Grooming Lounge Recent Work & Gallery",
+    "url": "https://eddiesgrooming.netlify.app/portfolio.html",
+    "description": "Gallery of precision haircuts, skin fades, beard grooming, and scalp treatments from Eddie's Grooming Lounge in Tarkwa, Ghana.",
+    "publisher": {
+      "@type": "Barbershop",
+      "name": "Eddie's Grooming Lounge",
+      "telephone": "+233548921100",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Plot 14, Old Post Office Road",
+        "addressLocality": "Tarkwa Central",
+        "addressRegion": "Western Region",
+        "addressCountry": "GH"
+      }
+    }
+  }
+  </script>
+
+  <!-- Google Fonts: Poppins (Clean Modern Architectural Luxury) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  
+  <!-- Material Symbols Outlined Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
+
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Master Script & Navigation Component -->
+  <script src="js/script.js" defer></script>
+  <script src="js/navigation.js" defer></script>
+</head>
+<body>
+
+  <!-- SHARED HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="container navbar">
+      <!-- Brand Identity -->
+      <a href="index.html" class="brand" aria-label="Eddie's Grooming Lounge Home">
+        <img src="images/logo.png" alt="Eddie's Grooming Lounge Emblem" class="brand-emblem" />
+        <div class="brand-text">
+          <span class="brand-name">EDDIE'S</span>
+          <span class="brand-tagline">Grooming Lounge • Tarkwa</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu (Single Source Component) -->
+      <nav class="nav-menu" data-component="nav-menu" aria-label="Primary navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Our Services</a>
+        <a href="portfolio.html" class="nav-link active">Recent Work</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <a href="contact.html" class="btn-reserve-nav">
+          <span>Reserve Chair</span>
+          <span class="material-symbols-outlined" style="font-size: 16px;">calendar_month</span>
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer (Single Source Component) -->
+  <div class="mobile-drawer-scrim" id="mobile-drawer-scrim"></div>
+  <nav class="mobile-drawer" id="mobile-drawer" data-component="mobile-drawer" aria-label="Mobile navigation" aria-hidden="true">
+    <div style="display: flex; align-items: center; gap: 0.875rem; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--color-border);">
+      <img src="images/logo.png" alt="Eddie's Logo" style="width: 42px; height: 42px; border-radius: 50%;" />
+      <div>
+        <div style="font-family: var(--font-serif); font-size: 1.375rem; font-weight: 700; color: var(--color-primary); line-height: 1;">EDDIE'S</div>
+        <div style="font-size: 0.625rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--color-text-muted); margin-top: 2px;">Tarkwa Sanctuary</div>
+      </div>
+    </div>
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="services.html" class="mobile-nav-link">Our Services</a>
+    <a href="portfolio.html" class="mobile-nav-link active">Recent Work</a>
+    <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+    <div style="margin-top: auto; padding-top: 1.5rem;">
+      <a href="contact.html" class="btn-terracotta" style="width: 100%;">
+        <span>Reserve Sanctuary Chair</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Gallery Hero Header -->
+    <section style="background: radial-gradient(circle at 75% 25%, #1D3527 0%, #13251B 60%, #0A140F 100%); color: #FFFFFF; padding-top: 140px; padding-bottom: 4.5rem; border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
+      <div class="container" style="max-width: 860px; text-align: center;">
+        <span class="section-tag" style="color: var(--color-gold);">Our Work Speaks</span>
+        <h1 style="font-family: var(--font-serif); font-size: clamp(2.75rem, 5vw, 4.25rem); font-weight: 500; line-height: 1.08; margin-bottom: 1.25rem;">
+          Fresh Cuts, Real Results
+        </h1>
+        <p style="color: #D6DCD8; font-size: 1.125rem; line-height: 1.8; font-weight: 300; margin-bottom: 2rem;">
+          Every client who sits in Eddie's chair walks out looking sharp. Over 1,000 happy clients across Tarkwa and the Western Region — with before and after photos to prove it.
+        </p>
+
+        <!-- Metric Badges -->
+        <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
+          <div style="background: rgba(255, 255, 255, 0.06); padding: 0.625rem 1.25rem; border-radius: var(--radius-full); border: 1px solid rgba(255, 255, 255, 0.12); font-size: 0.8125rem; color: var(--color-primary-fixed);">
+            <strong>1,000+</strong> Happy Clients in Tarkwa
+          </div>
+          <div style="background: rgba(255, 255, 255, 0.06); padding: 0.625rem 1.25rem; border-radius: var(--radius-full); border: 1px solid rgba(255, 255, 255, 0.12); font-size: 0.8125rem; color: var(--color-gold);">
+            <strong>Type 4C — 3A</strong> Hair Mastery
+          </div>
+          <div style="background: rgba(255, 255, 255, 0.06); padding: 0.625rem 1.25rem; border-radius: var(--radius-full); border: 1px solid rgba(255, 255, 255, 0.12); font-size: 0.8125rem; color: var(--color-primary-fixed);">
+            <strong>Western Region's</strong> Finest Barbers
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visual Archive Content Section -->
+    <section class="section-work">
+      <div class="container">
+        
+        <!-- INTERACTIVE BEFORE / AFTER TRANSFORMATION SLIDER (FUN FEATURE) -->
+        <div class="before-after-wrapper">
+          <div class="before-after-header">
+            <div>
+              <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--color-secondary);">Before & After</span>
+              <h2 style="font-family: var(--font-serif); font-size: 1.875rem; font-weight: 600; color: var(--color-primary); margin-top: 0.25rem;">
+                Client Transformation #104: Low Drop Fade
+              </h2>
+              <p style="font-size: 0.875rem; color: var(--color-text-muted);">
+                Drag the divider handle to compare the 4-week overgrown crown against the finished low drop fade — done right here at Eddie's.
+              </p>
+            </div>
+            <div style="font-size: 0.8125rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-primary); background: var(--color-canvas-low); padding: 0.5rem 1rem; border-radius: var(--radius-full);">
+              Client: Dr. Ken A. • Barber: Eddie Boateng
+            </div>
+          </div>
+
+          <!-- Slider Canvas -->
+          <div class="before-after-container" id="before-after-container">
+            <!-- After (Full background image) -->
+            <img src="images/slider-after.jpg" alt="Finished low drop fade haircut and sculpted beard" class="slider-img-after" />
+            <span class="slider-badge-after">After: Low Drop Fade &amp; Beard</span>
+
+            <!-- Before (Clipped overlay image) -->
+            <div class="before-image-clip" id="before-image-clip">
+              <img src="images/slider-before.jpg" alt="Client hair and beard before transformation" class="slider-img-before" />
+              <span class="slider-badge-before">Before: Overgrown Hair</span>
+            </div>
+
+            <!-- Draggable Handle -->
+            <div class="slider-handle" id="slider-handle">
+              <div class="slider-handle-pill">
+                <span class="material-symbols-outlined" style="font-size: 20px;">unfold_more</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Specification Ribbon -->
+          <div class="slider-spec-bar">
+            <div class="spec-col">
+              <span class="spec-label">Senior Barber</span>
+              <span class="spec-value">Eddie Boateng</span>
+            </div>
+            <div class="spec-col">
+              <span class="spec-label">Hair Type</span>
+              <span class="spec-value">Dense Type 4B Coils</span>
+            </div>
+            <div class="spec-col">
+              <span class="spec-label">Service Duration</span>
+              <span class="spec-value">65 Min Full Treatment</span>
+            </div>
+            <div class="spec-col">
+              <span class="spec-label">Natural Finish</span>
+              <span class="spec-value">Baobab &amp; Shea Pomade</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- EXPANDED BIG GALLERY: Filter Bar & Magazine-Scale Cards -->
+        <div class="work-header">
+          <div>
+            <div class="section-tag">Our Portfolio</div>
+            <h2 class="section-title">More of Our Work</h2>
+            <p class="section-subtitle">
+              A full gallery of cuts, fades, beards, and hair care done at Eddie's in Tarkwa.
+            </p>
+          </div>
+
+          <!-- Interactive Filter Tabs -->
+          <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all" type="button">All Works</button>
+            <button class="filter-btn" data-filter="fade" type="button">Architectural Fades</button>
+            <button class="filter-btn" data-filter="beard" type="button">Beard Craft</button>
+            <button class="filter-btn" data-filter="waves" type="button">Waves &amp; Coils</button>
+            <button class="filter-btn" data-filter="scalp" type="button">Scalp Care</button>
+          </div>
+        </div>
+
+        <!-- 8 Big Magazine-Scale Gallery Cards -->
+        <div class="work-grid" id="work-grid">
+          <!-- Card 1: Architectural Fade -->
+          <article class="work-card" data-category="fade">
+            <div class="work-media">
+              <img src="images/work-fade.jpg" alt="Skin fade haircut with sharp temple line-up" loading="lazy" />
+              <div class="work-hover-details">
+                <span class="work-meta-tag">Barber: Kwame Osei</span>
+                <div class="work-hover-title">Mid Skin Fade &amp; Lineup</div>
+                <div class="work-hover-desc">Clean taper blend with sharp hairline definition.</div>
+              </div>
+            </div>
+            <div class="work-body">
+              <div>
+                <h3 class="work-title">Geometric Skin Fade</h3>
+                <span class="work-subtitle">Zero-Drop Skin Fade</span>
+              </div>
+              <a href="contact.html" title="Book this look"><span class="material-symbols-outlined" style="color: var(--color-primary);">calendar_month</span></a>
+            </div>
+          </article>
+
+          <!-- Card 2: Low Temple Fade -->
+          <article class="work-card" data-category="fade">
+            <div class="work-media">
+              <img src="images/work-taper.jpg" alt="Low temple fade haircut with clean hairline" loading="lazy" />
+              <div class="work-hover-details">
+                <span class="work-meta-tag">Barber: Kwame Osei</span>
+                <div class="work-hover-title">Low Temple Fade &amp; Textured Top</div>
+                <div class="work-hover-desc">Low temple fade with sharp lineup and soothing aloe finish.</div>
+              </div>
+            </div>
+            <div class="work-body">
+              <div>
+                <h3 class="work-title">Low Temple Fade</h3>
+                <span class="work-subtitle">Type 4C Low Taper Fade</span>
+              </div>
+              <a href="contact.html" title="Book this look"><span class="material-symbols-outlined" style="color: var(--color-primary);">calendar_month</span></a>
+            </div>
+          </article>
+
+          <!-- Card 3: 360 Waves -->
+          <article class="work-card" data-category="waves">
+            <div class="work-media">
+              <img src="images/work-waves.jpg" alt="Deep 360 wave pattern with low drop taper fade" loading="lazy" />
+              <div class="work-hover-details">
+                <span class="work-meta-tag">Barber: Kwame Osei</span>
+                <div class="work-hover-title">360° Wave Pattern Cut</div>
+                <div class="work-hover-desc">Wave compression styling finished with golden jojoba oil.</div>
+              </div>
+            </div>
+            <div class="work-body">
+              <div>
+                <h3 class="work-title">360° Wave Alignment</h3>
+                <span class="work-subtitle">Clean 360 Wave Pattern</span>
+              </div>
+              <a href="contact.html" title="Book this look"><span class="material-symbols-outlined" style="color: var(--color-primary);">calendar_month</span></a>
+            </div>
+          </article>
+
+          <!-- Card 4: Beard Sculpt -->
+          <article class="work-card" data-category="beard">
+            <div class="work-media">
+              <img src="images/work-beard.jpg" alt="Contoured beard sculpt with sharp cheek line boundary" loading="lazy" />
+              <div class="work-hover-details">
+                <span class="work-meta-tag">Barber: Eddie Boateng</span>
+                <div class="work-hover-title">Full Beard Sculpt</div>
+                <div class="work-hover-desc">Hot towel eucalyptus steam, raw northern shea butter lather, and argan oil finish.</div>
+              </div>
+            </div>
+            <div class="work-body">
+              <div>
+                <h3 class="work-title">Full Beard Sculpt</h3>
+                <span class="work-subtitle">Clean Neckline Taper</span>
+              </div>
+              <a href="contact.html" title="Book this look"><span class="material-symbols-outlined" style="color: var(--color-primary);">calendar_month</span></a>
+            </div>
+          </article>
+
+          <!-- Card 5: Mature Beard Sculpt & Silver Taper -->
+          <article class="work-card" data-category="beard">
+            <div class="work-media">
+              <img src="images/work-mature.jpg" alt="Salt and pepper mature beard sculpt with contoured jawline alignment" loading="lazy" />
+              <div class="work-hover-details">
+                <span class="work-meta-tag">Barber: Eddie Boateng</span>
+                <div class="work-hover-title">Executive Beard &amp; Silver Taper</div>
+                <div class="work-hover-desc">Hot towel steam, natural argan oil, and low temple taper.</div>
+              </div>
+            </div>
+            <div class="work-body">
+              <div>
+                <h3 class="work-title">Executive Silver Taper</h3>
+                <span class="work-subtitle">Clean Jawline Profile</span>
+              </div>
+              <a href="contact.html" title="Book this look"><span class="material-symbols-outlined" style="color: var(--color-primary);">calendar_month</span></a>
+            </div>
+          </article>
+
+          <!-- Card 6: Scalp Therapy -->
+          <article class="work-card" data-category="scalp">
+            <div class="work-media">
+              <img src="images/work-scalp.jpg" alt="Restorative moringa scalp steam and volcanic clay application" loading="lazy" />
+              <div class="work-hover-details">
+                <span class="work-meta-tag">Barber: Nana Yaw</span>
+                <div class="work-hover-title">Sovereign Scalp Therapy</div>
+                <div class="work-hover-desc">Volcanic mineral clay wash to lift dry dandruff, moringa infusion, and a cooling herbal rinse to seal the scalp.</div>
+              </div>
+            </div>
+            <div class="work-body">
+              <div>
+                <h3 class="work-title">Sovereign Scalp Care</h3>
+                <span class="work-subtitle">Volcanic Clay &amp; Moringa</span>
+              </div>
+              <a href="contact.html" title="Book this look"><span class="material-symbols-outlined" style="color: var(--color-primary);">calendar_month</span></a>
+            </div>
+          </article>
+
+          <!-- Card 7: Moisture Coils -->
+          <article class="work-card" data-category="waves">
+            <div class="work-media">
+              <img src="images/work-coils.jpg" alt="Moisture locked natural coil twist sculpting" loading="lazy" />
+              <div class="work-hover-details">
+                <span class="work-meta-tag">Barber: Eddie Boateng</span>
+                <div class="work-hover-title">Natural Coil Twists</div>
+                <div class="work-hover-desc">Raw Tamale shea butter twist styling with natural moisture protection.</div>
+              </div>
+            </div>
+            <div class="work-body">
+              <div>
+                <h3 class="work-title">Natural Coil Styling</h3>
+                <span class="work-subtitle">Natural Moisture Seal</span>
+              </div>
+              <a href="contact.html" title="Book this look"><span class="material-symbols-outlined" style="color: var(--color-primary);">calendar_month</span></a>
+            </div>
+          </article>
+
+          <!-- Card 8: Master Barber Studio -->
+          <article class="work-card" data-category="fade">
+            <div class="work-media">
+              <img src="images/barber-portrait.png" alt="Senior barber holding precision shears in tailored apron at Eddie's Grooming Lounge, Tarkwa" loading="lazy" />
+              <div class="work-hover-details">
+                <span class="work-meta-tag">Senior Barber • Kwame Osei</span>
+                <div class="work-hover-title">Precision Barbering</div>
+                <div class="work-hover-desc">Over 10 years of professional barbering experience in the Western Region.</div>
+              </div>
+            </div>
+            <div class="work-body">
+              <div>
+                <h3 class="work-title">The Barber at Work</h3>
+                <span class="work-subtitle">Senior Barber Kwame Osei</span>
+              </div>
+              <a href="contact.html" title="Book this look"><span class="material-symbols-outlined" style="color: var(--color-primary);">calendar_month</span></a>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section style="background: var(--color-primary); color: #FFFFFF; padding: 5rem 0; text-align: center;">
+      <div class="container" style="max-width: 700px;">
+        <span class="section-tag" style="color: var(--color-gold);">Ready for Your Own Fresh Cut?</span>
+        <h2 style="font-family: var(--font-serif); font-size: clamp(2rem, 4vw, 3rem); font-weight: 600; margin-bottom: 1rem;">Come See Us in Tarkwa</h2>
+        <p style="color: #D6DCD8; font-size: 1.0625rem; line-height: 1.7; margin-bottom: 2.5rem;">
+          Bring a photo of the style you want — or let Eddie's barbers suggest a cut that suits your face shape and hair texture. We'll make it work.
+        </p>
+        <a href="contact.html" class="btn-terracotta">
+          <span>Book Your Chair</span>
+          <span class="material-symbols-outlined" style="font-size: 18px;">calendar_month</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-title">EDDIE'S</div>
+          <p class="footer-brand-desc">
+            Tarkwa's trusted grooming lounge. We deliver sharp cuts, clean beards, and natural hair care rooted in Ghanaian heritage — done properly, every time.
+          </p>
+          <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-gold); display: flex; align-items: center; gap: 0.5rem;">
+            <span style="width: 6px; height: 6px; border-radius: 50%; background: var(--color-gold);"></span>
+            Tarkwa Central, Western Region, Ghana
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div data-component="footer-nav">
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="services.html" class="footer-link">Our Services</a></li>
+            <li><a href="portfolio.html" class="footer-link">Recent Work</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Direct Line</div>
+          <ul class="footer-links">
+            <li><a href="tel:+233548921100" class="footer-link">+233 (0) 54 892 1100</a></li>
+            <li><a href="https://wa.me/233548921100" target="_blank" rel="noopener" class="footer-link">WhatsApp Us</a></li>
+            <li style="color: #A3ACA5; font-size: 0.8125rem; margin-top: 0.5rem;">
+              Plot 14, Old Post Office Road,<br />Tarkwa Central, Ghana
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Opening Hours</div>
+          <div class="footer-hours-row">
+            <span>Monday – Friday</span>
+            <span>08:30 — 20:00</span>
+          </div>
+          <div class="footer-hours-row">
+            <span>Saturday</span>
+            <span>08:00 — 21:00</span>
+          </div>
+          <div class="footer-hours-row">
+            <span>Sunday</span>
+            <span>11:00 — 18:30</span>
+          </div>
+
+          <div style="margin-top: 1.25rem;">
+            <div style="font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-gold); margin-bottom: 0.5rem;">Connect</div>
+            <div class="social-links">
+              <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Instagram">
+                <span class="material-symbols-outlined" style="font-size: 18px;">photo_camera</span>
+              </a>
+              <a href="https://wa.me/233548921100" target="_blank" rel="noopener" class="social-icon-btn" aria-label="WhatsApp">
+                <span class="material-symbols-outlined" style="font-size: 18px;">chat</span>
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Facebook">
+                <span class="material-symbols-outlined" style="font-size: 18px;">public</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Eddie's Grooming Lounge Ltd. Tarkwa, Western Region. All rights reserved.</div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="services.html" class="footer-link">Client Etiquette</a>
+          <a href="portfolio.html" class="footer-link">Our Ingredients</a>
+          <a href="contact.html" class="footer-link">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top" type="button">
+    <span class="material-symbols-outlined">arrow_upward</span>
+  </button>
+
+</body>
+</html>
