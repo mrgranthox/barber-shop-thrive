@@ -177,7 +177,7 @@ I engineered a lightweight component pattern in vanilla JavaScript (`js/navigati
 ```
 Student name: Edward Nyame
 Business and industry: Eddie's Grooming Lounge (Barbershop & Personal Grooming)
-GitHub repository link: https://github.com/edward-nyame/eddies-grooming-lounge
+GitHub repository link: https://github.com/mrgranthox/barber-shop-thrive
 JavaScript interaction: 
   1. Interactive Before & After comparison slider with touch/drag support
   2. Filterable gallery category tabs
