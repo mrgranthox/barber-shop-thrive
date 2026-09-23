@@ -1,0 +1,30 @@
+# Netlify Redirects File for Eddie's Grooming Lounge
+# Handles clean URLs, pretty URLs, subfolder relative links, and page routing
+
+# Clean URL rewrites
+/services          /services.html     200
+/services/         /services.html     200
+/portfolio         /portfolio.html    200
+/portfolio/        /portfolio.html    200
+/recent-work       /portfolio.html    200
+/recent-work/      /portfolio.html    200
+/contact           /contact.html      200
+/contact/          /contact.html      200
+/contact-us        /contact.html      200
+/contact-us/       /contact.html      200
+/home              /index.html        301
+/home/             /index.html        301
+
+# Prevent broken relative navigation if Netlify Pretty URLs appends trailing slashes
+/:folder/index.html       /index.html        301
+/:folder/services.html    /services.html     301
+/:folder/portfolio.html   /portfolio.html    301
+/:folder/contact.html     /contact.html      301
+
+# Nested subpath catches
+/services/*        /:splat            301
+/portfolio/*       /:splat            301
+/contact/*         /:splat            301
+
+# Fallback for broken routes
+/*                 /index.html        200

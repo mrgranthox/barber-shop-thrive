@@ -90,7 +90,7 @@ Here's roughly the order I followed:
 7. **Mobile responsiveness** — Added the viewport meta tag and wrote media queries for 1024px, 768px, 640px, 480px, and 360px breakpoints. Tested on different screen sizes to make sure nothing breaks.
 8. **Final testing** — Checked all pages in Chrome and Firefox, tested form validation edge cases, verified the slider works on touch devices, and made sure all links point to the right places.
 9. **First push to GitHub** — Committed and pushed to `https://github.com/mrgranthox/barber-shop-thrive`.
-10. **Netlify deployment** — Connected the GitHub repo to Netlify for the live version.
+10. **Netlify deployment** — Connected the GitHub repo to Netlify for the live version, including `_redirects` and `netlify.toml` routing configuration so page navigation and clean URLs work smoothly across the site.
 
 ---
 

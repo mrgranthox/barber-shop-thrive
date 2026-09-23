@@ -30,16 +30,23 @@
 
   // check if link matches current page
   function isLinkActive(linkHref) {
-    const currentPath = window.location.pathname.split("/").pop() || "index.html";
+    let currentPath = window.location.pathname.replace(/\/$/, "").split("/").pop() || "index.html";
+    if (currentPath === "") currentPath = "index.html";
+    if (!currentPath.endsWith(".html")) {
+      currentPath = currentPath + ".html";
+    }
 
-    // Target link parts
+    if (currentPath === "recent-work.html") currentPath = "portfolio.html";
+    if (currentPath === "contact-us.html") currentPath = "contact.html";
+    if (currentPath === "home.html") currentPath = "index.html";
+
     const parts = linkHref.split("#");
-    const targetPath = parts[0];
+    let targetPath = (parts[0].replace(/\/$/, "").split("/").pop()) || "index.html";
+    if (!targetPath.endsWith(".html")) {
+      targetPath = targetPath + ".html";
+    }
 
-    if (currentPath === targetPath) return true;
-    if (currentPath === "" && targetPath === "index.html") return true;
-
-    return false;
+    return currentPath === targetPath;
   }
 
   // render desktop nav
