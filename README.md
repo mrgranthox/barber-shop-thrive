@@ -41,7 +41,7 @@ The project contains four interconnected pages with a shared navigation system:
 | **How We Work** | `index.html#how-we-work` | A 3-step sequence: *01 We Listen First* (consultation), *02 Precision Cutting, Ghana Style* (shear & clipper work), and *03 Natural Finish & Send-Off* (shea butter & cool herbal seal). |
 | **Recent Work** | `index.html#recent-work` & `portfolio.html` | High-quality gallery images with titles, short descriptions, and barber attributions showcasing clean fades, wave compression, and beard sculpting. |
 | **Contact Us** | `contact.html` & `index.html#contact` | Interactive form with labeled Full Name, Email, Service Selection, Barber Selection, Date, and Message fields. Includes location details and opening hours. |
-| **Footer** | All pages (Bottom) | Business name, copyright notice, navigation links, direct telephone, WhatsApp link, physical address, opening hours, and etiquette/ingredient/privacy links. |
+| **Footer** | All pages (Bottom) | Business name, copyright notice, navigation links, direct telephone, WhatsApp link, direct email, physical address, opening hours, and social/contact icons (WhatsApp, GitHub, Email). |
 
 ---
 
@@ -178,6 +178,8 @@ I engineered a lightweight component pattern in vanilla JavaScript (`js/navigati
 Student name: Edward Nyame
 Business and industry: Eddie's Grooming Lounge (Barbershop & Personal Grooming)
 GitHub repository link: https://github.com/mrgranthox/barber-shop-thrive
+Contact Email: xbeenes@gmail.com
+Phone / WhatsApp: +233 (0) 54 329 0849
 JavaScript interaction: 
   1. Interactive Before & After comparison slider with touch/drag support
   2. Filterable gallery category tabs
