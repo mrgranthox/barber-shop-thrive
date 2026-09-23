@@ -1,178 +1,154 @@
-# Local Business Landing Page Capstone — Eddie's Grooming Lounge
+# Eddie's Grooming Lounge — Capstone Project
 
-**Thrive Africa | Frontend Development Essentials Course**  
-**Student Name:** Edward Nyame  
-**Assigned Industry:** Barbershop & Personal Grooming  
-**Business Name:** Eddie's Grooming Lounge  
-**Location:** Plot 14, Old Post Office Road, Tarkwa Central, Western Region, Ghana  
-
----
-
-## 1. Project Overview
-
-For my capstone project in the Thrive Africa Frontend Development Essentials course, I chose to design and build a complete website for **Eddie's Grooming Lounge**, a premium barbershop located in Tarkwa, Ghana.
-
-### Target Customers
-The business caters to working professionals, university students from the University of Mines and Technology (UMaT), corporate executives, and gentlemen across the Western Region who appreciate meticulous hair craftsmanship, clean beard detailing, and restorative scalp therapy in an unhurried, welcoming setting.
-
-### Main Goal
-The primary objective of the site is to establish an authentic digital presence for the lounge that:
-- Showcases the range of grooming services and transparent pricing in Ghana Cedis (GH₵).
-- Explains the step-by-step chair consultation process so first-time visitors know exactly what to expect.
-- Provides proof of quality through documented cut transformations and an interactive Before-and-After slider.
-- Makes it effortless for patrons to get in touch or book their chair via direct phone call, WhatsApp, or an online booking form.
+**Course:** Thrive Africa | Frontend Development Essentials  
+**Student:** Edward Nyame  
+**Industry:** Barbershop & Personal Grooming  
+**Business:** Eddie's Grooming Lounge  
+**Location:** Plot 14, Old Post Office Road, Tarkwa Central, Western Region, Ghana
 
 ---
 
-## 2. Features & Page Architecture
+## Project Overview
 
-The project contains four interconnected pages with a shared navigation system:
-1. **Home (`index.html`)** — The primary landing page introducing the lounge, key service highlights, our three-step cutting process, recent work previews, and clear call-to-action prompts.
-2. **Our Services (`services.html`)** — Comprehensive service menu detailing six distinct grooming packages with durations and prices in GH₵, a breakdown of local Ghanaian botanical ingredients (shea butter, moringa, jojoba, tea tree), and a 4-step chair journey.
-3. **Recent Work (`portfolio.html`)** — Interactive visual portfolio featuring an interactive Before-and-After slider, filterable gallery tabs, and case cards for various hair and beard textures (including Type 4C coils, wave alignments, and silver tapers).
-4. **Contact Us (`contact.html`)** — Full contact suite featuring physical location details, business opening hours, parking information, direct telephone/WhatsApp links, an aerial map preview, and a validated interactive booking form.
+This is my capstone project for the Thrive Africa Frontend Development Essentials course. I built a multi-page website for a barbershop called Eddie's Grooming Lounge, based in Tarkwa in the Western Region of Ghana.
 
-### Required Page Sections (Rubric Verified)
+The target audience is mainly working men, UMaT students, and professionals in the Tarkwa area who want a proper haircut, beard trim, or scalp treatment done with natural products.
 
-| Section | Location | Content Included |
+The main goal of the website is to let visitors see what services the shop offers with clear prices, understand the process before they come in, look through photos of past work, and easily book an appointment through a form or reach out by phone/WhatsApp.
+
+---
+
+## Features & Pages
+
+The site has four pages that share the same navigation bar and footer:
+
+1. **Home** (`index.html`) — Landing page with the hero section, a preview of the top 3 services, the 3-step process explanation, some recent work highlights, and booking call-to-actions.
+2. **Our Services** (`services.html`) — Full service menu showing six grooming packages with duration and GH₵ pricing, the natural ingredients used (shea butter, moringa, tea tree, etc.), and a step-by-step chair journey.
+3. **Recent Work** (`portfolio.html`) — A gallery page with a draggable before/after slider, filterable tabs for different categories (fades, beards, waves, scalp care), and photo cards with descriptions.
+4. **Contact Us** (`contact.html`) — Contact page with the shop location on a map, opening hours, phone/WhatsApp/email details, parking info, and a booking form with validation.
+
+### Section Checklist
+
+| Section | Where | What's in it |
 |---|---|---|
-| **Hero** | `index.html` (Top) | Business name ("EDDIE'S"), headline ("Rooted in Ghana. Sharpened to Perfection."), short introduction, high-res studio visual card, and primary CTAs ("Explore Our Services", "Book a Chair"). |
-| **Our Services** | `index.html#services` & `services.html` | Clear offerings with titles, descriptions, durations, and pricing in GH₵ (e.g. Signature Taper & Shear, Hot-Towel Beard Sculpt, Sovereign Scalp Therapy, Tarkwa VIP Experience). |
-| **How We Work** | `index.html#how-we-work` | A 3-step sequence: *01 We Listen First* (consultation), *02 Precision Cutting, Ghana Style* (shear & clipper work), and *03 Natural Finish & Send-Off* (shea butter & cool herbal seal). |
-| **Recent Work** | `index.html#recent-work` & `portfolio.html` | High-quality gallery images with titles, short descriptions, and barber attributions showcasing clean fades, wave compression, and beard sculpting. |
-| **Contact Us** | `contact.html` & `index.html#contact` | Interactive form with labeled Full Name, Email, Service Selection, Barber Selection, Date, and Message fields. Includes location details and opening hours. |
-| **Footer** | All pages (Bottom) | Business name, copyright notice, navigation links, direct telephone, WhatsApp link, direct email, physical address, opening hours, and social/contact icons (WhatsApp, GitHub, Email). |
+| **Hero** | `index.html` top | Business name, headline, intro text, studio photo, two CTA buttons |
+| **Our Services** | `index.html#services` + `services.html` | Service cards with names, descriptions, duration, and GH₵ prices |
+| **How We Work** | `index.html#how-we-work` | 3 steps: consultation, precision cutting, natural product finish |
+| **Recent Work** | `index.html#recent-work` + `portfolio.html` | Gallery images with titles and descriptions |
+| **Contact Us** | `contact.html` | Form with name, email, service, barber, date, and message fields. Location and hours included |
+| **Footer** | All pages | Copyright, navigation, phone, WhatsApp, email, address, hours, social icons |
 
 ---
 
-### JavaScript Interactions (How to Test)
+## JavaScript Interactions
 
-The project includes five distinct JavaScript interactions built using plain vanilla JavaScript (`js/script.js` and `js/navigation.js`):
+I built five interactions using plain vanilla JavaScript (no libraries). Here's how to test each one:
 
-#### 1. Interactive Before-and-After Haircut Slider (on `portfolio.html`)
-- **How to try it:** Navigate to `portfolio.html` and scroll down to the "Client Transformation #104" section. Click and drag the vertical divider handle left and right across the photo (or drag with your finger on touch screens).
-- **What happens:** As you drag, the top image dynamically clips via CSS `width` adjustments, revealing the "Before" overgrown state on the left and the clean "After" drop fade on the right. The width updates smoothly in real-time on mousemove/touchmove and stays constrained within container boundaries.
+### 1. Before/After Slider (`portfolio.html`)
+Go to `portfolio.html` and scroll to the transformation section. Click and drag the divider handle left or right across the photo. On mobile, swipe with your finger. The image clips in real time so you can see the "before" and "after" side by side.
 
-#### 2. Portfolio Category Filtering (on `portfolio.html`)
-- **How to try it:** On `portfolio.html`, scroll to the "More of Our Work" section and click on any filter button: *All Works*, *Fades & Tapers*, *Beard Craft*, *Waves & Coils*, or *Scalp Care*.
-- **What happens:** Non-matching cards smoothly fade out and collapse, while matching cards display with a subtle upward transition. Clicking "All Works" brings back all eight gallery cards.
+### 2. Gallery Filter Tabs (`portfolio.html`)
+On the same page, scroll to the gallery section. Click any filter button (All Works, Fades & Tapers, Beard Craft, Waves & Coils, Scalp Care). Cards that don't match fade out and the matching ones stay visible.
 
-#### 3. Client-Side Contact Form Validation (on `contact.html`)
-- **How to try it:** Navigate to `contact.html` and submit the booking form empty, or enter an invalid email (e.g. `kofi@`).
-- **What happens:** 
-  - Inline error messages appear immediately below the invalid fields in red text, with matching border highlights on the inputs.
-  - As soon as you begin typing valid text, the error messages disappear automatically via real-time `input` event listeners.
-  - When all required fields are correctly filled and submitted, a green demo alert banner appears at the top confirming the booking (*"Akwaaba, [Your Name]!"*), clearly labeled as a frontend demo in accordance with course guidelines.
+### 3. Form Validation (`contact.html`)
+Go to `contact.html` and try submitting the form without filling anything in. You'll see red error messages below each empty field. Start typing and the errors clear automatically. When everything is filled in correctly, a green banner pops up at the top saying the demo booking was logged. (This is just a frontend demo — no actual email gets sent.)
 
-#### 4. Responsive Mobile Navigation Drawer (All pages)
-- **How to try it:** Resize your browser window below 768px (or view on a mobile device) and tap the hamburger button in the top right.
-- **What happens:** The hamburger animates into an "X", the body background scroll locks to prevent jumpy movement, and a side navigation drawer slides in smoothly from the right over a backdrop scrim. Tapping the backdrop scrim, any navigation link, or pressing the `Escape` key closes the drawer cleanly.
+### 4. Mobile Navigation Drawer (all pages)
+Shrink your browser to below 768px or open on a phone. Tap the hamburger icon in the top right. The nav drawer slides in from the right with a dark backdrop. You can close it by tapping the backdrop, tapping any link, or pressing Escape.
 
-#### 5. Scroll-Triggered Sticky Header & Back-to-Top Button (All pages)
-- **How to try it:** Scroll down past 400px on any page.
-- **What happens:** The navigation header gains a subtle background elevation shadow, and a floating gold back-to-top button fades in at the bottom right. Clicking it smoothly animates the viewport back to the top.
+### 5. Sticky Header & Back-to-Top (all pages)
+Scroll down any page. After about 400px the header gets a shadow effect. A gold arrow button also appears at the bottom right — clicking it scrolls you back to the top smoothly.
 
 ---
 
-## 3. Design Research
+## Design Research
 
-Before writing code, I researched several award-winning grooming websites, barbershop brand systems, and editorial portfolios on platforms recommended in the course brief:
+I looked at barbershop and grooming websites on a few of the recommended platforms before I started coding:
 
-- **Refero & Landbook:** Studied layouts of boutique services that balance visual imagery with clear pricing tables. I noticed the best sites use ample whitespace, strong typographic hierarchy, and warm, tactile photography rather than clinical stock images.
-- **Dribbble & Behance:** Looked up modern barbershop identity designs, specifically studying how high-end salons showcase before-and-after work and how they display opening hours clearly.
-- **Local Inspiration & Adaptation:** 
-  - Rather than copying European or American barbershop clichés (neon signs, red-white-and-blue poles, or sterile clinical language), I deliberately rooted the visual identity in Ghanaian culture.
-  - The colour palette draws directly from Ghana's landscape: **Deep Forest Green (`#13251B`)** reflecting Western Region's lush rainforests, **Warm Gold (`#D4AF37`)** referencing the gold mining heritage of Tarkwa, and **Terracotta (`#994628`)** representing Ghanaian red earth and clay.
-  - The ingredients featured throughout the site are genuine West African staples: raw unrefined shea butter from Tamale (Northern Region), cold-pressed moringa from the Brong-Ahafo area, pure coconut oil, and soothing aloe vera.
+- **Refero and Landbook** — I browsed service-type business layouts to see how they balance images with pricing info. The ones I liked best had lots of whitespace and warm-toned photos instead of stock images.
+- **Dribbble and Behance** — Searched for barbershop branding and identity work. Got ideas for the before/after slider from a few salon portfolio concepts I found there.
+- **Ghanaian cultural choices** — Instead of going with typical Western barbershop looks (neon signs, red-white-blue colour schemes), I picked colours that reflect the Tarkwa area: deep forest green (`#13251B`) for the Western Region landscape, warm gold (`#D4AF37`) for the gold mining heritage, and terracotta red (`#994628`) for Ghanaian earth tones. The grooming products mentioned (shea butter, moringa oil, coconut oil) are all common in Ghana.
 
-### Image Credits & Assets
-- Studio and portrait photos: High-quality barbershop and grooming photography licensed for educational use via Unsplash and Pexels.
-- Brand Emblem: Custom vector-inspired circular crest designed for Eddie's Grooming Lounge.
-- Icons: Google Material Symbols (Outlined) web font.
-- Typography: Google Fonts — **Poppins** applied throughout all headings, navigation, buttons, and body copy for a clean, consistent, contemporary look.
+### Image & Asset Credits
+- Barbershop and grooming photos from Unsplash and Pexels (free for educational use)
+- Logo: custom circular emblem designed for the project
+- Icons: Google Material Symbols (Outlined) web font
+- Font: Poppins from Google Fonts
 
 ---
 
-## 4. Build Process
+## Build Process
 
-Here is the chronological order of how the project was built:
+Here's roughly the order I followed:
 
-1. **Business Planning & Paper Wireframing:** Selected the barbershop industry and conceptualised Eddie's Grooming Lounge in Tarkwa. Sketched rough desktop and mobile layouts on paper for each of the six required sections.
-2. **Git Repository & Project Setup:** Initialised a local Git repository, set up the project folder structure (`index.html`, `services.html`, `portfolio.html`, `contact.html`, `css/style.css`, `js/script.js`, `js/navigation.js`, and `images/`), and made the initial commit.
-3. **Semantic HTML Structure:** Coded semantic markup using `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, and `<footer>` tags. Added IDs to each section to enable smooth in-page jumping and inter-page navigation. Form fields were built with explicit `<label for="...">` associations.
-4. **CSS Architecture & Design Tokens:** Built `css/style.css` using custom properties in `:root` for colors, typography, spacing, border radii, and transitions. Implemented CSS Grid for card layouts and Flexbox for headers, navigation, and badges.
-5. **Single-Source Navigation System:** Created `js/navigation.js` to eliminate code duplication across pages. Centralised the link data into a single configuration object that dynamically renders the header nav, mobile drawer, and footer links, while automatically calculating and highlighting the active link.
-6. **JavaScript Interactivity:** Implemented the Before/After comparison slider using mouse and touch event listeners, coded the category filter for gallery cards, and built form validation logic with custom inline feedback.
-7. **Mobile Responsiveness (Bonus Credit):** Added `<meta name="viewport" content="width=device-width, initial-scale=1.0">`. Crafted custom media queries targeting 1024px, 768px, 640px, 480px, and 360px. Verified touch targets, font scaling, image flexibility, and layout stacking on narrow screens.
-8. **Testing & Code Audit:** Thoroughly tested cross-browser compatibility, verified HTML5 semantics, audited all alt texts, verified accessibility color contrast, and cleaned up code comments to ensure professional, readable formatting.
-9. **Netlify Deployment (Bonus Credit):** Connected the repository to Netlify for continuous static hosting.
-
----
-
-## 5. SEO & Structured Data Implementation
-
-Every page has been given its own dedicated, page-specific SEO package:
-
-- **Unique Page Titles & Descriptions:** Crafted unique meta titles and rich descriptions for all four pages tailored to local Tarkwa search queries.
-- **Open Graph & Twitter Cards:** Configured `og:title`, `og:description`, `og:image`, `og:url`, `og:type`, `og:locale` (`en_GH`), and Twitter summary cards for rich preview generation when links are shared on WhatsApp, Facebook, or Twitter.
-- **Geotargeting Tags:** Added `geo.region` (`GH-WP`), `geo.placename` (`Tarkwa`), and `ICBM`/`geo.position` coordinates (`5.3018, -1.9930`) to boost local Ghanaian search discovery.
-- **Schema.org Structured Data (JSON-LD):**
-  - `index.html`: Complete `Barbershop` schema with address, coordinates, opening hours, and phone number.
-  - `services.html`: `OfferCatalog` schema listing individual services and prices in GHS.
-  - `portfolio.html`: `ImageGallery` schema describing the portfolio case studies.
-  - `contact.html`: `ContactPage` schema with local business contact point details.
-- **Canonical URLs:** Self-referencing canonical links on every page to prevent duplicate content indexing.
+1. **Chose the business** — Picked a barbershop in Tarkwa and sketched out rough layouts on paper for each section (hero, services, how we work, recent work, contact, footer).
+2. **Set up Git and project files** — Ran `git init`, created the folder structure (`index.html`, `services.html`, `portfolio.html`, `contact.html`, `css/style.css`, `js/script.js`, `js/navigation.js`, `images/`), and pushed the first commit to GitHub.
+3. **HTML structure** — Built the markup using semantic tags (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`) and added IDs for in-page navigation. Form fields have proper `<label>` associations.
+4. **CSS styling** — Set up CSS custom properties (`:root` variables) for colours, fonts, and spacing. Used CSS Grid for card layouts and Flexbox for the header and navigation.
+5. **Navigation system** — Created `js/navigation.js` so I only have to update navigation links in one place and it updates across all four pages automatically.
+6. **JavaScript features** — Built the before/after slider (mouse + touch events), gallery filter, form validation with inline error messages, mobile drawer with scroll lock, and sticky header with back-to-top button.
+7. **Mobile responsiveness** — Added the viewport meta tag and wrote media queries for 1024px, 768px, 640px, 480px, and 360px breakpoints. Tested on different screen sizes to make sure nothing breaks.
+8. **Final testing** — Checked all pages in Chrome and Firefox, tested form validation edge cases, verified the slider works on touch devices, and made sure all links point to the right places.
+9. **First push to GitHub** — Committed and pushed to `https://github.com/mrgranthox/barber-shop-thrive`.
+10. **Netlify deployment** — Connected the GitHub repo to Netlify for the live version.
 
 ---
 
-## 6. Run & Test Instructions
+## SEO Setup
 
-### Running Locally
-There are no dependencies, package managers, or build steps required.
+Each page has its own SEO tags:
+- Unique `<title>` and `<meta description>` for each page
+- Open Graph tags (`og:title`, `og:description`, `og:image`) so links look good when shared on WhatsApp or social media
+- Geo-targeting tags (`geo.region`, `geo.placename`, `ICBM`) pointing to Tarkwa's coordinates
+- Schema.org JSON-LD structured data on every page (Barbershop, OfferCatalog, ImageGallery, ContactPage schemas)
+- Canonical URLs on each page
 
-**Option A: Using Python's built-in HTTP server (Recommended)**
+---
+
+## How to Run Locally
+
+No build tools or package managers needed — it's just HTML, CSS, and JavaScript.
+
+**Option A (recommended):** Open a terminal in the project folder and run:
 ```bash
-# Navigate to the project directory in your terminal
-cd path/to/project
-
-# Start a local static server
 python3 -m http.server 8080
-
-# Open in your browser:
-# http://localhost:8080
+# Then open http://localhost:8080 in your browser
 ```
 
-**Option B: Direct Browser Opening**
-Double-click `index.html` or open it directly in Google Chrome, Mozilla Firefox, Apple Safari, or Microsoft Edge.
+**Option B:** Just double-click `index.html` to open it directly in your browser.
 
-### Testing Checklist & Results
+### Testing Results
 
-| Screen / Device | Tested Width | Result |
+| Device / Screen | Width Tested | Result |
 |---|---|---|
-| **Mobile (iPhone SE / Galaxy)** | 360px – 375px | All cards stack into single columns; mobile drawer operates cleanly; form inputs and buttons meet minimum 48px tap target heights; no horizontal overflow. |
-| **Mobile Large (iPhone Pro Max)** | 414px – 430px | Clean card padding; hero image renders sharply; before/after slider operates smoothly via touch. |
-| **Tablet (iPad Mini / Air)** | 768px – 820px | Navigation shifts gracefully to drawer; grids display 2 columns; before/after slider adjusts width dynamically on orientation change. |
-| **Laptop / Desktop** | 1024px – 1366px | Full horizontal navigation displays; sticky header elevation triggers on scroll; 3-column service and work grids align cleanly. |
-| **Large Desktop** | 1920px (Full HD) | Content containers cap at 1280px max-width to maintain comfortable reading lengths; typography remains crisp. |
+| Mobile (small) | 360–375px | Cards stack in one column, mobile drawer works, buttons are big enough to tap, no sideways scrolling |
+| Mobile (large) | 414–430px | Layout looks clean, hero image loads fine, before/after slider works with touch |
+| Tablet | 768–820px | Nav switches to the drawer, grids show 2 columns, slider adjusts on rotation |
+| Laptop | 1024–1366px | Full desktop nav shows, sticky header works, 3-column grids line up properly |
+| Large screen | 1920px | Content stays centred at max-width, text is still readable |
+
+### Known Issues
+- The contact form is frontend-only (demo). It doesn't actually send emails — it just shows a confirmation message. In a real version you'd connect it to something like Formspree or a backend.
+- The map on the contact page is a static image, not an interactive Google Maps embed.
 
 ---
 
-## 7. Reflection & Key Learnings
+## Reflection
 
-### Biggest Challenge
-The biggest technical hurdle was managing multi-page navigation across four independent HTML files without using a templating engine like Jinja or a framework like React. In typical static sites, modifying a nav link means manually editing every single HTML file, which easily leads to broken links and inconsistent active states.
+### Biggest challenge
+The hardest part was keeping the navigation consistent across four separate HTML files. Without a framework like React where you'd just make a component, I had to find another way. Changing one link meant changing it in four files, which was messy.
 
-### Solution
-I engineered a lightweight component pattern in vanilla JavaScript (`js/navigation.js`). By defining the navigation routes once in a data object and mounting it into `data-component` DOM containers on `DOMContentLoaded`, any navigation change only requires editing one single array. Additionally, reading `window.location.pathname` allows the script to automatically apply the `.active` class to the appropriate link without any manual per-page configuration.
+### How I solved it
+I wrote a small JavaScript file (`js/navigation.js`) that stores all the nav links in one object. On page load, it fills in the nav bar, mobile drawer, and footer links automatically. So now if I need to change a link or add a page, I just edit one array and it updates everywhere.
 
-### What I Learned
-- The power of modern vanilla JavaScript — implementing responsive touch-and-drag sliders and dynamic DOM filtering without relying on external libraries like jQuery or Swiper.
-- The importance of design tokens in CSS — creating a scalable design system using custom CSS properties in `:root`.
-- How to structure authentic local business copy that resonates with Ghanaian culture rather than relying on generic corporate templates.
+### What I learned
+- You can do a lot with just vanilla JS — the drag slider and the gallery filter didn't need any external libraries.
+- Setting up CSS variables at the start saves a lot of time later when you want to change colours or spacing across the whole site.
+- Writing copy for a specific place (Tarkwa, Ghana) makes the site feel more real than using generic text.
 
 ---
 
-## 8. Course Submission Details
+## Submission Details
 
 ```
 Student name: Edward Nyame
@@ -181,12 +157,12 @@ GitHub repository link: https://github.com/mrgranthox/barber-shop-thrive
 Contact Email: xbeenes@gmail.com
 Phone / WhatsApp: +233 (0) 54 329 0849
 JavaScript interaction: 
-  1. Interactive Before & After comparison slider with touch/drag support
-  2. Filterable gallery category tabs
-  3. Client-side booking form validation with inline feedback
-  4. Mobile navigation drawer with scroll lock
-  5. Scroll-triggered sticky header and back-to-top button
-Mobile responsiveness bonus: Completed (Tested across 360px, 375px, 768px, 1024px, 1366px)
+  1. Before/after comparison slider (drag + touch)
+  2. Gallery filter tabs
+  3. Contact form validation with inline feedback
+  4. Mobile nav drawer with scroll lock
+  5. Sticky header and back-to-top button
+Mobile responsiveness bonus: Completed (tested at 360px, 375px, 768px, 1024px, 1366px)
 Netlify live link: https://eddiesgrooming.netlify.app
 ```
 

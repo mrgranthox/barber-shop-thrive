@@ -1,13 +1,10 @@
-/**
- * Eddie's Grooming Lounge — Master Script
- * Vanilla JavaScript (ES6)
- * Handles mobile navigation, before/after comparison slider, gallery filtering, and contact form validation.
- */
+// main script for the site
+// handles nav, slider, filters, form
 
 document.addEventListener('DOMContentLoaded', function () {
   'use strict';
 
-  // 1. Sticky header on scroll
+  // sticky header effect
   const header = document.getElementById('site-header');
 
   function handleHeaderScroll() {
@@ -34,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('scroll', handleHeaderScroll, { passive: true });
   handleHeaderScroll();
 
-  // 2. Mobile navigation drawer toggle and scroll lock
+  // mobile menu toggle
   const mobileToggle = document.getElementById('mobile-toggle');
   const mobileDrawer = document.getElementById('mobile-drawer');
   const drawerScrim = document.getElementById('mobile-drawer-scrim');
@@ -105,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // 3. Before / After comparison slider
+  // before-after slider logic
   const sliderContainer = document.getElementById('before-after-container');
   const beforeImageClip = document.getElementById('before-image-clip');
   const beforeImage = document.querySelector('.slider-img-before');
@@ -114,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (sliderContainer && beforeImageClip && sliderHandle) {
     let isSliding = false;
 
-    // Synchronize the before image width to match the container
+    // match before image width to container
     function syncSliderWidth() {
       if (!sliderContainer || !beforeImage) return;
       const containerWidth = sliderContainer.offsetWidth;
@@ -171,7 +168,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // 4. Portfolio category filter
+  // portfolio category filter
   const filterButtons = document.querySelectorAll('.filter-btn');
   const workCards = document.querySelectorAll('.work-card');
 
@@ -207,7 +204,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // 5. Contact form validation (on contact.html)
+  // form validation
   const contactForm = document.getElementById('contact-form');
   const demoAlert = document.getElementById('demo-alert');
 
@@ -306,7 +303,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // 6. Back-to-top smooth scroll
+  // back to top button
   const backToTopBtn = document.getElementById('back-to-top');
   if (backToTopBtn) {
     backToTopBtn.addEventListener('click', function () {

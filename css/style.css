@@ -4,7 +4,7 @@
  * Typography: Poppins
  */
 
-/* --- 1. Design Tokens & Variables --- */
+/* Design Tokens & Variables */
 :root {
   --color-canvas: #FBF9F4;
   --color-canvas-low: #F4F0E8;
@@ -57,7 +57,7 @@
   --transition-bounce: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* --- 2. CSS Reset & Global Base --- */
+/* CSS Reset & Global Base */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -117,7 +117,7 @@ ul, ol {
   list-style: none;
 }
 
-/* --- 3. Layout Containers --- */
+/* Layout Containers */
 .container {
   width: 100%;
   max-width: 1240px;
@@ -127,7 +127,7 @@ ul, ol {
   padding-right: clamp(1rem, 3vw, 2rem);
 }
 
-/* --- 4. Typography System (Real Brand "POP") --- */
+/* Typography System */
 .font-serif {
   font-family: var(--font-serif);
 }
@@ -175,7 +175,7 @@ ul, ol {
   line-height: 1.7;
 }
 
-/* --- 5. Clean, Shared Navbar (Interconnected Pages) --- */
+/* Navbar */
 .site-header {
   position: fixed;
   top: 0;
@@ -313,7 +313,7 @@ ul, ol {
   box-shadow: 0 4px 14px rgba(40, 59, 48, 0.35);
 }
 
-/* Mobile Hamburger Toggle (Activated at 1024px for smooth tablet UX) */
+/* Mobile Menu Button */
 .mobile-toggle {
   display: none;
   flex-direction: column;
@@ -406,7 +406,7 @@ ul, ol {
   padding-left: 0.5rem;
 }
 
-/* --- 6. Global Buttons --- */
+/* Buttons */
 .btn-primary {
   display: inline-flex;
   align-items: center;
@@ -481,7 +481,7 @@ ul, ol {
   box-shadow: 0 6px 22px rgba(153, 70, 40, 0.4);
 }
 
-/* --- 7. Editorial Brand Ticker Ribbon --- */
+/* Ticker */
 .ticker-wrap {
   width: 100%;
   background-color: var(--color-primary-dark);
@@ -521,7 +521,7 @@ ul, ol {
   100% { transform: translateX(-50%); }
 }
 
-/* --- 8. Hero Section (Maximum "POP" & Glassmorphic Stat Cards) --- */
+/* Hero Section */
 .hero-section {
   position: relative;
   background: radial-gradient(circle at 80% 20%, #1D3527 0%, #13251B 50%, #0A140F 100%);
@@ -679,7 +679,7 @@ ul, ol {
   white-space: nowrap;
 }
 
-/* --- THE 3 HERO STAT CARDS (Responsive Auto-Fit Grid) --- */
+/* Hero Stat Cards */
 .hero-stats-ribbon {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -746,7 +746,7 @@ ul, ol {
   color: #B9C4BC;
 }
 
-/* --- 9. Section: Services Catalog & Rituals --- */
+/* Services Section */
 .section-services {
   padding: clamp(3.5rem, 7vw, 6.5rem) 0;
   background-color: var(--color-canvas);
@@ -915,7 +915,7 @@ ul, ol {
   color: var(--color-secondary);
 }
 
-/* --- 10. Botanical Compendium Grid (Services Page) --- */
+/* Ingredients Grid */
 .section-compendium {
   padding: clamp(3.5rem, 7vw, 6.5rem) 0;
   background-color: var(--color-canvas-low);
@@ -1002,7 +1002,7 @@ ul, ol {
   color: var(--color-primary);
 }
 
-/* --- 11. Section: How We Work & Dedicated Journey Grid --- */
+/* How We Work Section */
 .section-method {
   padding: clamp(3.5rem, 7vw, 6.5rem) 0;
   background-color: var(--color-canvas-low);
@@ -1020,7 +1020,7 @@ ul, ol {
   gap: 2rem;
 }
 
-/* Dedicated responsive class for the 4-step journey on services.html */
+/* 4-step layout (services page) */
 .journey-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1044,7 +1044,7 @@ ul, ol {
   transform: translateY(-4px);
 }
 
-/* Centerpiece Elevated Pillar 02 (Charred Timber Luxury) */
+/* Step 02 highlighted */
 .method-step.highlighted {
   background: radial-gradient(circle at 50% 0%, #23382C 0%, #13251B 100%);
   color: var(--color-on-primary);
@@ -1128,7 +1128,7 @@ ul, ol {
   color: #FFFFFF;
 }
 
-/* --- 12. Section: Visual Archive & Galleries (Big Images & Slider) --- */
+/* Gallery & Portfolio Section */
 .section-work {
   padding: clamp(3.5rem, 7vw, 6.5rem) 0;
   background-color: var(--color-canvas);
@@ -1143,7 +1143,7 @@ ul, ol {
   flex-wrap: wrap;
 }
 
-/* Category Filter Tabs (Accessible Touch Targets) */
+/* Filter Tabs */
 .filter-tabs {
   display: flex;
   align-items: center;
@@ -1178,7 +1178,7 @@ ul, ol {
   box-shadow: 0 2px 8px rgba(19, 37, 27, 0.2);
 }
 
-/* --- INTERACTIVE BEFORE / AFTER COMPARISON SLIDER (Fluid Sizing) --- */
+/* Before/After Slider */
 .before-after-wrapper {
   margin-bottom: 4rem;
   background-color: var(--color-canvas-card);
@@ -1294,7 +1294,7 @@ ul, ol {
   color: #FFFFFF;
 }
 
-/* Before/After Case Study Specification Ribbon */
+/* Before/After Info Bar */
 .slider-spec-bar {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1429,7 +1429,7 @@ ul, ol {
   color: var(--color-text-light);
 }
 
-/* --- 13. Section: Contact & Reservation Page --- */
+/* Contact Page */
 .section-contact {
   padding: clamp(3.5rem, 7vw, 6.5rem) 0;
   background-color: var(--color-canvas-low);
@@ -1561,7 +1561,7 @@ ul, ol {
   margin-top: 0.25rem;
 }
 
-/* Form Elements (Ensures >= 16px to prevent iOS auto-zoom) */
+/* Form Elements */
 .form-grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1692,7 +1692,7 @@ ul, ol {
   margin-top: 0.875rem;
 }
 
-/* --- 14. Approved Footer --- */
+/* Footer */
 .site-footer {
   background-color: var(--color-primary);
   color: var(--color-on-primary);
@@ -1810,7 +1810,7 @@ ul, ol {
   gap: 1rem;
 }
 
-/* --- 15. Floating Back-to-Top Button --- */
+/* Back-to-Top Button */
 .back-to-top {
   position: fixed;
   bottom: 2rem;
@@ -1843,9 +1843,9 @@ ul, ol {
   transform: translateY(-3px);
 }
 
-/* --- Responsive Media Queries --- */
+/* Media Queries */
 
-/* --- Large Tablet / Small Laptop Breakpoint (max 1024px) --- */
+/* max 1024px */
 @media (max-width: 1024px) {
   /* Activate mobile navigation to prevent navbar cramp on iPads */
   .nav-menu {
@@ -1900,7 +1900,7 @@ ul, ol {
   }
 }
 
-/* --- Standard Tablet & Large Mobile (max 768px) --- */
+/* max 768px */
 @media (max-width: 768px) {
   .btn-reserve-nav {
     display: none;
@@ -1947,7 +1947,7 @@ ul, ol {
   }
 }
 
-/* --- Mobile Landscape / Intermediate (max 640px) --- */
+/* max 640px */
 @media (max-width: 640px) {
   .journey-grid,
   .compendium-grid {
@@ -1979,7 +1979,7 @@ ul, ol {
   }
 }
 
-/* --- Standard Mobile (max 480px) --- */
+/* max 480px */
 @media (max-width: 480px) {
   .container {
     padding-left: 1rem;
@@ -2060,7 +2060,7 @@ ul, ol {
   }
 }
 
-/* --- Ultra-Small Mobile (max 360px - e.g. Galaxy Fold / iPhone SE) --- */
+/* max 360px */
 @media (max-width: 360px) {
   .hero-headline {
     font-size: 1.95rem;

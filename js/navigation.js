@@ -1,12 +1,9 @@
-/**
- * Eddie's Grooming Lounge — Navigation Component
- * Shared navigation config for desktop header, mobile drawer, and footer.
- */
+// navigation setup — handles desktop nav, mobile drawer, and footer links
 
 (function () {
   'use strict';
 
-  // Navigation configuration
+  // nav config
   const NAV_CONFIG = {
     brand: {
       name: "EDDIE'S",
@@ -31,7 +28,7 @@
     }
   };
 
-  // Check if link matches current page path
+  // check if link matches current page
   function isLinkActive(linkHref) {
     const currentPath = window.location.pathname.split("/").pop() || "index.html";
 
@@ -45,7 +42,7 @@
     return false;
   }
 
-  // Render desktop navigation links
+  // render desktop nav
   function renderDesktopNav() {
     const containers = document.querySelectorAll('[data-component="nav-menu"], .nav-menu');
     containers.forEach(function (container) {
@@ -59,7 +56,7 @@
     });
   }
 
-  // Render mobile drawer navigation
+  // render mobile menu
   function renderMobileDrawer() {
     const drawers = document.querySelectorAll('[data-component="mobile-drawer"], .mobile-drawer');
     drawers.forEach(function (drawer) {
@@ -106,7 +103,7 @@
     });
   }
 
-  // Render footer links
+  // render footer nav
   function renderFooterNav() {
     const containers = document.querySelectorAll('[data-component="footer-nav"]');
     containers.forEach(function (container) {
@@ -123,24 +120,24 @@
     });
   }
 
-  // Render all navigation mount points
+  // render everything
   function renderAllNavigation() {
     renderDesktopNav();
     renderMobileDrawer();
     renderFooterNav();
   }
 
-  // Initialize on DOM ready
+  // run on load
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", renderAllNavigation);
   } else {
     renderAllNavigation();
   }
 
-  // Update on hash changes
+  // update on hash change
   window.addEventListener("hashchange", renderAllNavigation);
 
-  // Expose on window for testing or inspection
+  // expose for testing
   window.EddieNav = {
     config: NAV_CONFIG,
     render: renderAllNavigation
